@@ -22,6 +22,7 @@ Sakshi Mishra
 
 5. Dataset links:
         https://www.kaggle.com/c/kkbox-music-recommendation-challenge/data
+        
         http://millionsongdataset.com/
 
 
@@ -59,6 +60,7 @@ The application will show the impact of not wearing a mask and directs you to a 
 
 5. Dataset links:
         https://www.kaggle.com/c/job-recommendation/data
+        
         https://www.itsyourskills.com/
 
 
@@ -78,6 +80,7 @@ Real state agents can similarly benefit as they would be able to get a better in
 
 5. Dataset links:
         https://www.kaggle.com/ahmedzaky01/housing
+       
         https://www.kaggle.com/fedesoriano/california-housing-prices-data-extra-features
 
 
