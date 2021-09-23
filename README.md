@@ -21,6 +21,7 @@ Sakshi Mishra
         Users who listen to music and want to explore new songs without having the trouble to manually look for them.
 
 5. Dataset links:
+        
         https://www.kaggle.com/c/kkbox-music-recommendation-challenge/data
         
         http://millionsongdataset.com/
@@ -42,6 +43,7 @@ The application will show the impact of not wearing a mask and directs you to a 
         Images of people with and without masks.
 
 5. Dataset link:
+        
         https://www.kaggle.com/andrewmvd/face-mask-detection 
 
 
@@ -59,6 +61,7 @@ The application will show the impact of not wearing a mask and directs you to a 
         Since recent graduates or entry-level professionals often lack job experience they would greatly benefit from our system since it matches them to jobs based on their skill sets. Nonetheless, even people that have years of experience can use it to find a job that is more aligned with their future interests.
 
 5. Dataset links:
+        
         https://www.kaggle.com/c/job-recommendation/data
         
         https://www.itsyourskills.com/
@@ -79,6 +82,7 @@ The application will show the impact of not wearing a mask and directs you to a 
 Real state agents can similarly benefit as they would be able to get a better insight into the housing market in California. 
 
 5. Dataset links:
+        
         https://www.kaggle.com/ahmedzaky01/housing
        
         https://www.kaggle.com/fedesoriano/california-housing-prices-data-extra-features
