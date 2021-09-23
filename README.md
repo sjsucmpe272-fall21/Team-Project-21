@@ -1,14 +1,15 @@
 # Team-Project-21
 
-####### Derian Lemus
+ Derian Lemus
 
-####### Manish Mapakshi
+ Manish Mapakshi
 
-####### Navami Murthy
+ Navami Murthy
 
-####### Sakshi Mishra
+ Sakshi Mishra
 
-####### Project Ideas:
+ 
+ # Project Ideas:
 
 # IDEA 1: Music Recommendation System
 1. Introduction to the problem statement:
