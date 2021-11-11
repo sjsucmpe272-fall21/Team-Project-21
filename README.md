@@ -8,12 +8,19 @@
 
  Sakshi Mishra
 
- 
- # Project Ideas:
-
-# IDEA: Cashflow
+# CASHFLOW
 
 Create a web application called cashflow to determine which home will yield and its cashflow.
+
+# ABSTRACT
+
+# FUNCTIONALITY 
+
+# TECHNOLOGY STACK
+React JS - Frontend
+Django - Backend
+AWS - Cloud Deployment
+Relational DB - MySQL
 
 
 
