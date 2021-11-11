@@ -10,9 +10,8 @@
 
 # CASHFLOW
 
-Create a web application called cashflow to determine which home will yield and its cashflow.
-
 # ABSTRACT
+Create a web application called cashflow to determine which home will yield and its cashflow.
 
 # FUNCTIONALITY 
 
