@@ -1,4 +1,6 @@
-from django.shortcuts import render
+
+from django.http import HttpResponse
+from django.shortcuts import get_object_or_404, render
 from django.views.decorators.csrf import csrf_exempt
 from keras.models import load_model
 import numpy as np
@@ -63,3 +65,4 @@ def homepage(request):
                           {'result': 'Your net Loss' ' in this investment will be $  {pf}'.format(pf=profit)})
 
     return render(request, 'LandingPage.html', {'result': None})
+
