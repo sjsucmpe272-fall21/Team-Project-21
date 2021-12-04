@@ -1,8 +1,8 @@
 {% load static %}
 <!DOCTYPE HTML>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
-<title>Flat Contacto Widget Flat Responsive Widget Template :: w3layouts</title>
+<title>Predict Price</title>
 <!-- Custom Theme files -->
 
 <link href="{% static 'css/homePage.css' %}" rel="stylesheet" type="text/css" media="all"/>
@@ -10,7 +10,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Flat Contacto Widget Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <!-- //for-mobile-apps -->
 <!--Google Fonts-->
 <link href='//fonts.googleapis.com/css?family=Cuprum:400,700' rel='stylesheet' type='text/css'>
@@ -27,37 +26,69 @@
 </script>
 </head>
 <body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a href="#" class="navbar-brand">CASHFLOW</a>
+                    </div>
+
+                    <div class="navbar-collapse collapse" id="mobile_menu">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="/accounts/history">History</a></li>
+                            <li><a href="/accounts/graphs">Graphs</a></li>
+                            <li><a href="/accounts/logout" style="left: 800px">LogOut</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <!--header start here-->
 <div class="header agile">
 	<div class="wrap">
 		<div class="contact">
+
 			<div class="contact-head">
+
+
+				<div ><a href="/accounts/predictor"><img style="margin-right: 700px" src="/static/images/exit.png" alt="back"> </a></div>
 				<h2>Predict Profit</h2>
-				<div class="cls-con"><img src="/static/images/cancel.png" alt=""> </div>
 				<div class="clear"> </div>
 			</div>
-			<form action="#" method="post" >
-				<input type="text" placeholder="zipcode" name="zipcode" id ="zipcode">
-				<input type="text" class="no-mar" placeholder="square_feet" name="square_feet" id="square_feet">
-				<input type="text" placeholder="condition" name="condition" id="condition">
-		        <input type="text" class="no-mar" placeholder="bathrooms" name="bathrooms" id="bathrooms">
-		        <input type="text" placeholder="bedrooms" name="bedrooms" id="bedroom">
-				 <input type="text" class="no-mar" placeholder="Duration to calculate" id="duration" name="duration">
+			{% if not result %}
+			<form action="#" method="post" id="inform" >
+				<input type="text" style="width:100%" placeholder="House Name" name="house_name" id="house_name"></input>
+				<input type="text" style="width: 50%" placeholder="zipcode" name="zipcode" id ="zipcode" >
+				<input type="text"  style="width: 49%" placeholder="square_feet" name="square_feet" id="square_feet" >
+				<input type="text" style="width: 50%" placeholder="condition" name="condition" id="condition" >
+		        <input type="text" style="width: 49%" placeholder="bathrooms" name="bathrooms" id="bathrooms" >
+		        <input type="text" style="width: 50%" placeholder="bedrooms" name="bedrooms" id="bedroom">
+				 <input type="text" style="width: 49%" placeholder="Duration to calculate" id="duration" name="duration" >
 
 				<div >
-				<input  type="checkbox" id = "mortgage"  onclick="checkMortgage()">
-					<p> Add mortgage Amount </p>
+				<label><input type="checkbox" id="mortgage" onclick="checkMortgage()"/> Add mortgage Amount </label>
 				</div>
-
-				<input type="text" placeholder="Mortgaged Amount" id = "amount" name="mortgage_principle" style = "display:none">
-		        <input type="text"  placeholder="Rate of Interest" id = "roi" name="rio" style = "display:none">
-		        <input type="text" placeholder="time" id = "time" name="time" style = "display:none">
+                   <br/>
+				<input type="text" style="width: 100% ;display:none;" placeholder="Mortgaged Amount" id = "amount" name="mortgage_principle" >
+		        <input type="text" style="width: 100%;display:none;" placeholder="Rate of Interest" id = "roi" name="rio" style = "display:none">
+		        <input type="text" style="width: 100%;display:none;" placeholder="time" id = "time" name="time" style = "display:none">
 
 				<input type="submit" value="Submit" id="submit" onclick="checkResult()"/>
-				{% if result %}
-				<p>Predicted Price: {{result}} USD</p>
-				{% endif %}
+
 			</form>
+			{% endif %}
+			{% if result %}
+				<p>Predicted Price: {{result}} USD</p>
+			{% endif %}
 
 		</div>
 	</div>
@@ -73,17 +104,20 @@
 		var amount = document.getElementById("amount");
 		var roi = document.getElementById("roi");
 		var time = document.getElementById("time");
+
 		if(mortgage.checked==true)
 		{
 		  roi.style.display="block";
 		  amount.style.display="block";
 		  time.style.display="block";
+
 		}
 		else
 		{
 		  roi.style.display="none";
 		  amount.style.display="none";
 		  time.style.display="none";
+
 		}
 	}
 
@@ -100,7 +134,7 @@
 		var condition = document.getElementById("condition");
 		var square_feet = document.getElementById("square_feet");
 		var zipcode = document.getElementById("zipcode");
-
+		var text = document.getElementById("text");
 		  roi.style.display="none";
 		  amount.style.display="none";
 		  time.style.display="none";
@@ -112,8 +146,23 @@
 		  condition.style.display="none";
 		  square_feet.style.display="none";
 		  zipcode.style.display="none";
+		  text.style.display ="none";
 
 	}
+
+		function makeFormVisible()
+	{
+		var predict = document.getElementById("Predict");
+		var history = document.getElementById("history");
+		var vis = document.getElementById("vis");
+		var inform = document.getElementById("inform");
+	    predict.style.display="none";
+	    history.style.display="none";
+	    vis.style.display="none";
+		inform.style.display="block";
+	}
+
+
 
 </script>
 </html>

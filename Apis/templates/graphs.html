@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<title>Predict Price</title>
+<!-- Custom Theme files -->
+
+<link href="{% static 'css/homePage.css' %}" rel="stylesheet" type="text/css" media="all"/>
+<!-- for-mobile-apps -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- //for-mobile-apps -->
+<!--Google Fonts-->
+<link href='//fonts.googleapis.com/css?family=Cuprum:400,700' rel='stylesheet' type='text/css'>
+<!--google fonts-->
+<script>var __links = document.querySelectorAll('a');function __linkClick(e) { parent.window.postMessage(this.href, '*');} ;for (var i = 0, l = __links.length; i < l; i++) {if ( __links[i].getAttribute('data-t') == '_blank' ) { __links[i].addEventListener('click', __linkClick, false);}}</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>$(document).ready(function(c) {
+	$('.cls-con').on('click', function(c){
+		$('.contact').fadeOut('slow', function(c){
+	  		$('.contact').remove();
+		});
+	});
+});
+</script>
+</head>
+<body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<div class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <div class="navbar-header">
+                        <button class="navbar-toggle" data-target="#mobile_menu" data-toggle="collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                        <a href="#" class="navbar-brand">CASHFLOW</a>
+                    </div>
+
+                    <div class="navbar-collapse collapse" id="mobile_menu">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="/accounts/history">History</a></li>
+                            <li><a href="/accounts/graphs">Graphs</a></li>
+                            <li><a href="/accounts/logout" style="left: 800px">LogOut</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--header start here-->
+<div class="header agile">
+	<div class="wrap">
+		<div class="contact" style="width:600px; height:550px;">
+
+			<div class="contact-head">
+				<h3>Average cost of house over one month</h3>
+				<div class="clear"> </div>
+			</div>
+
+                   <div ><img style="width:600px; height:300px;" src="/static/images/graph1.png" alt=""> </div>
+
+
+
+		</div>
+
+        <div class="contact" align="" style="width:600px; height:550px;">
+
+			<div class="contact-head">
+				<h2>Average cost of house over one year</h2>
+				<div class="clear"> </div>
+			</div>
+
+                   <div ><img style="width:600px; height:300px;" src="/static/images/graph2.png" alt=""> </div>
+
+
+
+		</div>
+
+	</div>
+</div>
+
+
+</body>
+
+</html>
